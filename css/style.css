@@ -500,6 +500,10 @@ body {
   width: 100%;
 }
 
+.header_active{
+  background: #0E1D28;
+}
+
 .wrapper__header {
   display: flex;
   flex-wrap: wrap;
