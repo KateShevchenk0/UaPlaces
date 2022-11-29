@@ -454,6 +454,7 @@ body {
   line-height: 1.2;
   font-weight: normal;
   color: #102746;
+  min-width: 1400px;
 }
 
 *,
@@ -467,11 +468,13 @@ body {
 .wrapper {
   max-width: 1060px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .wrapper-full {
   max-width: 1262px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .section_title {
@@ -501,6 +504,7 @@ body {
   transition: .2s linear;
   padding-bottom: 20px;
   z-index: 999;
+  /* padding: 0 15px 20px 15px */
 }
 
 .header_active{
@@ -513,6 +517,7 @@ body {
   align-items: flex-end;
   justify-content: space-between;
   padding-top: 46px;
+  padding: 0 15px;
 }
 
 .header__list {
