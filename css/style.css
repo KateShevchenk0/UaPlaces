@@ -1073,9 +1073,33 @@ width: 50%;
 
 
 /* Media start */
+@media screen and (max-width: 960px){
+    .benefits{
+      margin-bottom: 75px;
+    }
+    .benefits_card{
+      margin-bottom: 60px;
+    }
+    .search-form_field{
+      margin-bottom: 25px;
+    }
+    .benefits_cards{
+      padding: 0 15px;
+      grid-column-gap: 3px;
+    }
+    .benefits_title{
+      padding: 55px 15px;
+    }
+    .benefits_wrap{
+      box-shadow: none;
+    }
+}
+
+
 @media screen and (max-width: 767px){
   .header__burger{
     display: block;
+    cursor: pointer;
   }
   .header__nav{
     width: 100%;
@@ -1105,13 +1129,13 @@ width: 50%;
     line-height: 48px;
   }
   .header__nav-close{
+    cursor: pointer;
    width: 40px;
    height: 40px;
    position: absolute;
-   margin: 0;
-   top: 0;
-   left: 0;
-   z-index: 11;
+   left: 24px;
+   top: 24px;
+   z-index: auto;
   }
   .header__nav-close-line{
   display: block;
