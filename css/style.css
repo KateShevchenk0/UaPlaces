@@ -500,14 +500,14 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  transition: .2s linear;
+  transition: 0.2s linear;
   padding-bottom: 20px;
   z-index: 999;
   padding-bottom: 20px;
 }
 
-.header_active{
-  background: rgba(156, 140, 128, 0.5);;
+.header_active {
+  background: rgba(156, 140, 128, 0.5);
 }
 
 .wrapper__header {
@@ -546,15 +546,14 @@ body {
   opacity: 60%;
 }
 
-.header__burger{
+.header__burger {
   display: none;
   width: 40px;
   height: 28px;
   position: relative;
 }
 
-
-.burger_line{
+.burger_line {
   display: block;
   width: 100%;
   height: 2px;
@@ -563,16 +562,16 @@ body {
   position: absolute;
 }
 
-.burger_line_first{
+.burger_line_first {
   top: 0;
 }
 
-.burger_line_second{
- top: 50%;
- transform: translateY(-50%);
+.burger_line_second {
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.burger_line_third{
+.burger_line_third {
   bottom: 0;
 }
 
@@ -764,7 +763,8 @@ body {
 .places_cards {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-gap: 10px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
 }
 
 .places_card {
@@ -816,7 +816,6 @@ body {
   object-fit: cover;
 }
 
-
 .places_card-pic_size-sm {
   height: 248px;
   object-fit: cover;
@@ -862,7 +861,7 @@ body {
 .tours_tour {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 0 103px;
+  grid-column-gap: 0 103px;
   align-items: center;
   margin-bottom: 77px;
 }
@@ -908,14 +907,15 @@ body {
 
 .top_cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 57px;
-
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 57px;
+  grid-row-gap: 57px;
 }
 
 .top_card {
   display: flex;
   flex-direction: column;
+  grid-column: span 2;
 }
 
 .top_card-pic {
@@ -957,7 +957,6 @@ body {
 }
 
 .top_card-likes-value {
-
 }
 
 .top_card-comments {
@@ -969,42 +968,39 @@ body {
 }
 
 .top_card-comments-value {
-
 }
 
-.top_card-descr{
+.top_card-descr {
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px; 
+  line-height: 24px;
   color: #102746;
   margin-bottom: 31px;
 }
- 
 
-.btn_see_more{
+.btn_see_more {
   width: 118px;
   padding: 15px 11px;
   margin: auto 0 0 0;
-
 }
 
 /* Top end */
 
 /* Video start */
-.videos{
+.videos {
   width: 100%;
 }
 
-.videos_wrapper{
+.videos_wrapper {
   max-width: 1440px;
   margin: 0 auto;
   position: relative;
 }
-.video_item{
-padding-top: 50%;
+.video_item {
+  padding-top: 50%;
 }
 
-.video-element{
+.video-element {
   position: absolute;
   top: 0;
   left: 0;
@@ -1015,49 +1011,45 @@ padding-top: 50%;
 /* Video end */
 
 /* Footer start */
-.footer{
- padding: 50px 0;
- background:#9C8C80 ;
+.footer {
+  padding: 50px 0;
+  background: #9c8c80;
 }
 
-.footer_item{
+.footer_item {
   display: flex;
   flex-wrap: wrap;
   padding: 20px 0;
 }
 
-.footer_logo{
-  width: 50%; 
+.footer_logo {
+  width: 50%;
   padding: 0 auto;
 }
 
-
-.footer_logo_pic{
-  
+.footer_logo_pic {
 }
-.footer_nav{
+.footer_nav {
   display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-width: 50%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 50%;
 }
 
-.footer_menu{
-
+.footer_menu {
 }
 
-.footer_menu_item{
-
+.footer_menu_item {
 }
 
-.footer_menu_title{
+.footer_menu_title {
   color: #fff;
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
 }
 
-.footer_menu_link{
+.footer_menu_link {
   color: #fff;
   text-decoration: none;
   font-weight: normal;
@@ -1065,43 +1057,70 @@ width: 50%;
   line-height: 24px;
 }
 
-
-.footer_menu_link:hover, .footer_menu_link:focus, .footer_menu_link:active{
-  opacity: .75;
+.footer_menu_link:hover,
+.footer_menu_link:focus,
+.footer_menu_link:active {
+  opacity: 0.75;
 }
 /* Footer end */
 
-
 /* Media start */
-@media screen and (max-width: 960px){
-    .benefits{
-      margin-bottom: 75px;
-    }
-    .benefits_card{
-      margin-bottom: 60px;
-    }
-    .search-form_field{
-      margin-bottom: 25px;
-    }
-    .benefits_cards{
-      padding: 0 15px;
-      grid-column-gap: 3px;
-    }
-    .benefits_title{
-      padding: 55px 15px;
-    }
-    .benefits_wrap{
-      box-shadow: none;
-    }
+@media screen and (max-width: 960px) {
+  .benefits {
+    margin-bottom: 75px;
+  }
+  .benefits_card {
+    margin-bottom: 60px;
+  }
+  .search-form_field {
+    margin-bottom: 25px;
+  }
+  .benefits_cards {
+    padding: 0 15px;
+    grid-column-gap: 35px;
+  }
+  .benefits_title {
+    padding: 55px 15px;
+  }
+  .benefits_wrap {
+    box-shadow: none;
+  }
+  .places_card-size-lg{
+    grid-column: span 6;
+  }
+  .places_card-size-sm{
+    grid-column: span 6;
+  }
+  .tours_tour{
+    grid-column-gap: 35px;
+  }
+  .tour_info{
+    padding-left: 0;
+  }
+  .tour_title{
+    margin-bottom: 15px;
+  }
+  .tour_desc{
+    margin-bottom: 15px;
+  }
+  .top_cards{
+    grid-column-gap: 25px;
+    grid-row-gap: 55px;
+  }
+  .top_card{
+    grid-column: span 3;
+  }
+  .top_card-pic{
+    margin-bottom: 25px;
+  }
 }
 
-
-@media screen and (max-width: 767px){
-  .header__burger{
+@media screen and (max-width: 767px) {
+  .header__burger {
     display: block;
     cursor: pointer;
   }
-  .header__nav{
+  .header__nav {
     width: 100%;
     height: 100%;
     position: fixed;
@@ -1111,49 +1130,46 @@ width: 50%;
     z-index: 10;
     padding: 75px;
     transform: translateX(100%);
-    transition: .2s all linear;
+    transition: 0.2s all linear;
   }
-  .header__nav_active{
+  .header__nav_active {
     transform: translateX(0);
   }
-  .header__item{
+  .header__item {
     width: 100%;
     margin-right: 0;
     margin-bottom: 30px;
   }
-  .header__item:last-child{
+  .header__item:last-child {
     margin-bottom: 0;
   }
-  .header__link{
+  .header__link {
     font-size: 42px;
     line-height: 48px;
   }
-  .header__nav-close{
+  .header__nav-close {
     cursor: pointer;
-   width: 40px;
-   height: 40px;
-   position: absolute;
-   left: 24px;
-   top: 24px;
-   z-index: auto;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 24px;
+    top: 24px;
+    z-index: auto;
   }
-  .header__nav-close-line{
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: #fff;
-  position: absolute;
-  top: 50%;
+  .header__nav-close-line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
   }
-  .header__nav-close-line:first-child{
+  .header__nav-close-line:first-child {
     transform: translateY(-50%) rotate(45deg);
   }
-  .header__nav-close-line:last-child{
+  .header__nav-close-line:last-child {
     transform: translateY(-50%) rotate(-45deg);
   }
-
-
 }
-
 
 /* Media end */
