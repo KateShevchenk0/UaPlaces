@@ -685,7 +685,7 @@ body {
 }
 .benefits_card {
   grid-column: span 1;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 .benefits_card-thumb {
   display: block;
@@ -1071,7 +1071,7 @@ body {
     margin-bottom: 75px;
   }
   .benefits_card {
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
   }
   .search-form_field {
     margin-bottom: 25px;
@@ -1232,6 +1232,9 @@ body {
   }
   .places_view-all{
     margin-bottom: 25px;
+  }
+  .places_title{
+    margin-bottom: 40px;
   }
   .places_caption{
     margin-bottom: 0;
