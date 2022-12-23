@@ -1229,7 +1229,9 @@ body {
   .tour_pic{
     margin-bottom: 12px;
   }
-
+  .tour_pic_mob-first{
+    grid-row-start: -1;
+  }
 }
 
 @media screen  and (max-width: 500px){
@@ -1237,5 +1239,4 @@ body {
     padding: 75px 30px;
   }
 }
-
 /* Media end */
