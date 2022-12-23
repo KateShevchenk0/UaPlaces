@@ -1217,6 +1217,18 @@ body {
   .benefits_card-desc{
     margin-bottom: 20px;
   }
+  .places{
+    margin-bottom: 76px;
+  }
+  .places_card-pic_size-lg, .places_card-pic_size-sm{
+    height: 230px;
+  }
+  .tour_pic, .tour_info{
+    grid-column: span 2;
+  }
+  .tour_pic{
+    margin-bottom: 12px;
+  }
 
 }
 
