@@ -31,7 +31,7 @@ window.onscroll = () =>{
     }
 }());
 
-// //scroll 
+//scroll 
 (function(){
 
     const smoothScroll = function(targetEl, duration){
